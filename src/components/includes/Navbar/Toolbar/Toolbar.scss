@@ -1,0 +1,131 @@
+@import "../../../../css/main.scss";
+
+.toolbar_navigation {
+  height: 100%;
+  display: flex;
+  align-items: baseline;
+  padding: 30px 70px;
+  position: absolute;
+  z-index: 1;
+}
+
+.toolbar_logo a {
+  text-decoration: none !important;
+  color: $secondary-color !important;
+  font-weight: 800;
+  font-size: 1.5rem !important;
+}
+
+.toolbar_navigation_items {
+  display: flex;
+  width: 100%;
+}
+
+.toolbar_navigation_items ul {
+  list-style: none;
+}
+
+.toolbar_navigation_items ul.links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: 30px;
+}
+
+.toolbar_navigation_items ul.login_signup {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+
+  & li.drop_down {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &:hover ul {
+      display: block;
+    }
+
+    ul {
+      position: absolute;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      padding: 2rem 2rem;
+      display: none;
+      z-index: 9999;
+      top: 6rem;
+      border-radius: 4px;
+
+      & li a {
+        color: #606c86;
+        text-decoration: none;
+        font-size: 1.4rem;
+      }
+
+      & li:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    & article {
+      display: flex;
+      align-items: flex-start;
+      margin-left: 3rem;
+      h3 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 1.5rem;
+        color: #606c86;
+      }
+
+      h2 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #606c86;
+      }
+
+      p {
+        color: #606c86;
+        text-decoration: underline;
+      }
+
+      img {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}
+
+.toolbar_navigation_items ul.links li {
+  margin-right: 20px;
+}
+
+.toolbar_navigation_items ul.links li a.top-link {
+  color: $secondary-color;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid $secondary-color;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .toolbar_navigation_items {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .toolbar_toggle_button {
+    display: none;
+  }
+  .toolbar_logo {
+    margin-left: 0;
+  }
+}

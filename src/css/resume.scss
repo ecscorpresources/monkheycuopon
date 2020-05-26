@@ -1,0 +1,58 @@
+@import "../css/main.scss";
+
+.resumeFirstsection {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 4rem;
+
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 90vw;
+  }
+}
+
+.sidebar {
+  &__jobs {
+    display: flex;
+    flex-direction: column;
+
+    & article {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+
+      ul {
+        li {
+          margin-bottom: 0.1rem;
+          font-size: 1.4rem;
+          color: #5e8799;
+        }
+
+        li:first-child {
+          font-size: 1.6rem;
+        }
+      }
+
+      h4 {
+        font-size: 1.8rem;
+        color: #5e8799;
+        font-weight: 600;
+      }
+
+      & div:first-child {
+        margin-right: 2rem;
+      }
+    }
+
+    & article:not(:last-child) {
+      border-bottom: 1px solid #5e8799;
+    }
+  }
+}

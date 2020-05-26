@@ -1,0 +1,118 @@
+@import "../css/main.scss";
+
+.candidatedashboardFisrtSection {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  column-gap: 10rem;
+  row-gap: 4rem;
+  padding-top: 10rem;
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+  }
+
+  & article:first-child {
+    > div {
+      margin-bottom: 1.5rem;
+      border-radius: 5px;
+      padding: 1rem;
+      color: #fff;
+
+      p {
+        font-size: 1.2rem;
+        text-align: right;
+      }
+
+      h4 {
+        text-align: right;
+      }
+    }
+
+    > div:not(:first-child) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    > div:nth-child(2) {
+      background: #52b3c3;
+    }
+
+    > div:nth-child(3) {
+      background: #53c3b8;
+    }
+
+    > div:nth-child(4) {
+      background: #53a2c3;
+    }
+
+    > div:nth-child(5) {
+      background: #7abdc7;
+    }
+
+    > div:first-child {
+      display: flex;
+      align-items: center;
+      background: #52b3c3;
+
+      div {
+        margin-left: 1rem;
+      }
+
+      p {
+        text-align: left;
+      }
+
+      h4 {
+        margin-left: auto;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  & article:nth-child(2) {
+    h3 {
+      color: #40759d;
+      font-weight: 600;
+    }
+
+    div:last-child {
+      margin-bottom: 15rem;
+      width: 60vw;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 10px;
+      @media (max-width: 992px) {
+        grid-template-columns: 0.5fr;
+      }
+    }
+    table {
+      width: 100%;
+      font-size: 1.3rem;
+      border-radius: 6px 6px 0 0;
+      overflow: hidden;
+      margin-bottom: 4rem;
+    }
+
+    table thead tr {
+      background-color: #606c86;
+      color: #fff;
+    }
+
+    table th {
+      padding: 0.5rem 4rem;
+      font-weight: 100;
+    }
+
+    table tr,
+    table td {
+      padding: 1rem 4rem;
+    }
+
+    table tbody tr {
+      border-bottom: 1px solid #606c86;
+    }
+  }
+}
