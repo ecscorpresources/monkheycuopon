@@ -16,6 +16,15 @@ const Landing = () => {
       <FadeIn transitionDuration="500">
         <section className="landingFirstSection">
           {/* <LandingForm /> */}
+          <article>
+            <h2>
+              Get Exactly What You Need <br /> For All Your Creative Projects
+            </h2>
+            <p>
+              Have your creative Ideas come alive by exploring our <br /> huge
+              collection of digital products and resources
+            </p>
+          </article>
         </section>
 
         <section className="landingSecondSection">
