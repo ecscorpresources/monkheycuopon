@@ -201,6 +201,8 @@
   grid-template-columns: 3fr 1fr;
   column-gap: 4rem;
   row-gap: 2rem;
+  align-items: start;
+  padding-bottom: 10rem;
   @media (max-width: 992px) {
     grid-template-columns: 1fr;
   }
@@ -253,12 +255,31 @@
 
   & article:nth-child(2) {
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    row-gap: 3rem;
+
+    @media screen and(max-width:992px) {
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+
+      column-gap: 3rem;
+    }
+
+    @media screen and(max-width:768px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 3rem;
+    }
+
     figure {
       background-color: #c4cfdb;
       padding: 1rem;
       border-radius: 0.4rem;
+      align-self: start;
+
+      @media screen and(max-width:768px) {
+        justify-self: start;
+      }
 
       h2 {
         padding-top: 1.5rem;

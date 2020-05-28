@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./Toolbar.scss";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import navlinks from "../../../../constants/navlinks";
-import Signin from "../../../auth/Signin";
 
 const Toolbar = (props) => {
   return (

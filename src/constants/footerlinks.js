@@ -1,89 +1,53 @@
 export const link1 = [
   {
-    text: "Home",
+    text: "Theme & Templates",
     path: "/",
   },
 
   {
-    text: "Register",
-    path: "/register",
-  },
-
-  {
-    text: "Login",
-    path: "/login",
-  },
-  {
-    text: "Job Seeker",
+    text: "Graphics & Vectors",
     path: "/",
   },
 
   {
-    text: "Recruiter",
+    text: "Photos & Images",
+    path: "/",
+  },
+  {
+    text: "Motion & Grphics",
     path: "/",
   },
 ];
 
 export const link2 = [
   {
-    text: "Create Job Post",
+    text: "Scripts & Plugins",
     path: "/",
   },
 
   {
-    text: "Create Cv",
+    text: "Music & Sounds",
     path: "/",
   },
 
   {
-    text: "Create Company Profile",
+    text: "3D Models & Textures",
     path: "/",
   },
   {
-    text: "Take Test",
-    path: "/",
-  },
-
-  {
-    text: "Job Alert",
+    text: "Fonts & logos",
     path: "/",
   },
 ];
 
 export const link3 = [
   {
-    text: "Job List",
-    path: "/",
-  },
-
-  {
-    text: "Search CVs",
-    path: "/",
-  },
-
-  {
-    text: "Career Advice",
-    path: "/",
-  },
-  {
-    text: "Advertise IT Jobs",
-    path: "/",
-  },
-
-  {
-    text: "Contact",
-    path: "/",
-  },
-];
-
-export const link4 = [
-  {
-    text: "About Us",
-    path: "/",
-  },
-
-  {
     text: "Terms & Conditions",
+    path: "/",
+  },
+
+  {
+    text: "FAQ",
     path: "/",
   },
 
@@ -92,7 +56,7 @@ export const link4 = [
     path: "/",
   },
   {
-    text: "FAQ",
+    text: "About Us",
     path: "/",
   },
 ];
