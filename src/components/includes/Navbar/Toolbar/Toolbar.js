@@ -24,7 +24,36 @@ const Toolbar = (props) => {
             />
           </Link>
         </div>
-        <div className="toolbar_navigation"></div>
+        <div className="toolbar_navigation_items">
+          <ul className="categories">
+            <li>Browse Categorires</li>
+          </ul>
+
+          <article>
+            <ul>
+              {navlinks.map((link) => (
+                <li>
+                  <Link to={link.path}>{link.text}</Link>
+                </li>
+              ))}
+            </ul>
+            <form>
+              <input
+                type="text"
+                placeholder="Search for Templates, Pictures, Music and More"
+              />
+            </form>
+          </article>
+
+          <ul>
+            <li>
+              <Link>Login</Link>
+            </li>
+            <li>
+              <Link>SignUp</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   );

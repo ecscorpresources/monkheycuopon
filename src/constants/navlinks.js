@@ -1,21 +1,16 @@
 export default [
   {
-    text: "Jobs",
-    path: "/jobs",
-  },
-
-  {
-    text: "Recruiter",
+    text: "Free Products",
     path: "/",
   },
 
   {
-    text: "Recruiting?",
-    strongtext: " Post a Job",
-    path: "/jobpost",
+    text: "Become a Partner",
+    path: "/",
   },
+
   {
-    text: "Run Aptitude Tests",
+    text: "Start a Shop",
     path: "/",
   },
 ];
