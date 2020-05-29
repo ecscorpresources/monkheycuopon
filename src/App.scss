@@ -18,6 +18,12 @@
   margin-top: -14rem;
   min-height: 100vh;
 
+  @media screen and(max-width:768px) {
+    padding-left: 0;
+    text-align: center;
+    justify-content: center;
+  }
+
   & h2 {
     font-size: 3.5rem;
     font-weight: 600;
@@ -101,6 +107,7 @@
 
     div:first-child {
       align-self: flex-end;
+      margin-right: 1rem;
     }
 
     h3 {
@@ -195,6 +202,15 @@
   }
 }
 
+.landingFourthSection {
+  padding-left: 10rem;
+  padding-bottom: 2rem;
+
+  & h5 {
+    font-size: 2.3rem;
+  }
+}
+
 .landingFifthSection {
   width: 90vw;
   margin: 0 auto;
@@ -235,9 +251,9 @@
         }
 
         span {
-          background-color: #4abebd;
+          background-color: #d4ffff;
           align-self: flex-start;
-          color: #fff;
+          color: #4abebd;
           padding: 0.2rem 1.5rem;
           text-align: center;
           font-size: 1.5rem;

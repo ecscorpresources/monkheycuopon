@@ -27,12 +27,10 @@
     li {
       font-size: 1.4rem;
       font-weight: 600;
-      position: relative;
-      top: 1rem;
     }
   }
 
-  & ul:last-child {
+  & ul.login_signup {
     margin-left: auto;
 
     li a {
@@ -83,7 +81,6 @@
     ul {
       display: flex;
       justify-content: space-evenly;
-      margin-bottom: 1rem;
 
       li a {
         font-size: 1.5rem;

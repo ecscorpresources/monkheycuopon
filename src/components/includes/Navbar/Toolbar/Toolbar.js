@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import "./Toolbar.scss";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import navlinks from "../../../../constants/navlinks";
 
 const Toolbar = (props) => {
+  const location = props.location.pathname;
+
   return (
     <header>
       <nav
@@ -37,15 +39,17 @@ const Toolbar = (props) => {
                 </li>
               ))}
             </ul>
-            <form>
-              <input
-                type="text"
-                placeholder="Search for Templates, Pictures, Music and More"
-              />
-            </form>
+            {location === "/" && (
+              <form>
+                <input
+                  type="text"
+                  placeholder="Search for Templates, Pictures, Music and More"
+                />
+              </form>
+            )}
           </article>
 
-          <ul>
+          <ul className="login_signup">
             <li>
               <Link>Login</Link>
             </li>
@@ -59,4 +63,4 @@ const Toolbar = (props) => {
   );
 };
 
-export default Toolbar;
+export default withRouter(Toolbar);

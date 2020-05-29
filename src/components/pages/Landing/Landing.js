@@ -1,11 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-// import LandingForm from "../../../components/Landing/LandingForm";
 import { values } from "../../../components/Landing/Values";
-import { PrimaryLink, SecondaryLink } from "../../../globals/links-button";
 import FadeIn from "react-fade-in";
-import Signin from "../../auth/Signin";
 
 const Landing = () => {
   useEffect(() => {
@@ -13,9 +9,8 @@ const Landing = () => {
   }, []);
   return (
     <>
-      <FadeIn transitionDuration="500">
+      <FadeIn transitionDuration="600">
         <section className="landingFirstSection">
-          {/* <LandingForm /> */}
           <article>
             <h2>
               Get Exactly What You Need <br /> For All Your Creative Projects
@@ -120,7 +115,7 @@ const Landing = () => {
         <section className="landingFifthSection">
           <article>
             <figure>
-              <Link to="/">
+              <Link to="/list">
                 <img src={require("../../../assets/img/16.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -130,11 +125,11 @@ const Landing = () => {
                 </div>
                 <span>$17</span>
               </div>
-              <h3>Graphics & Templates</h3>
+              <h3>Graphics & Vectors</h3>
             </figure>
 
             <figure>
-              <Link to="/">
+              <Link to="/list">
                 <img src={require("../../../assets/img/17.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -148,7 +143,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/">
+              <Link to="/list">
                 <img src={require("../../../assets/img/18.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -162,7 +157,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/">
+              <Link to="/list">
                 <img src={require("../../../assets/img/19.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -176,7 +171,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/">
+              <Link to="/list">
                 <img src={require("../../../assets/img/20.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -190,7 +185,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/">
+              <Link to="/list">
                 <img src={require("../../../assets/img/21.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -204,7 +199,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/">
+              <Link to="/list">
                 <img src={require("../../../assets/img/22.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -218,7 +213,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/">
+              <Link to="/list">
                 <img src={require("../../../assets/img/23.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -232,7 +227,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/">
+              <Link to="/list">
                 <img src={require("../../../assets/img/24.png")} alt="" />
               </Link>
               <div className="item-description">
