@@ -1,19 +1,25 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Modal, ModalBody } from "reactstrap";
-import { TextArea, GRID } from "../../components/Jobs/Forms/FormContol";
-import { PrimaryLink, PrimaryButton } from "../../globals/links-button";
+import { PrimaryLink } from "../../globals/links-button";
+import Signup from "./Signup";
 import styled from "styled-components";
 
-const CandidateMessage = () => {
+const SignIn = (props) => {
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
   const closeModal = () => setModal(!modal);
   return (
     <>
-      <PrimaryLink primary to="/" onClick={toggle}>
-        MESSAGE
-      </PrimaryLink>
+      {props.jobalert ? (
+        <PrimaryLink to="/" onClick={toggle}>
+          LOGIN
+        </PrimaryLink>
+      ) : (
+        <PrimaryLink primary="true" to="/" onClick={toggle}>
+          LOGIN
+        </PrimaryLink>
+      )}
       <Modal isOpen={modal} toggle={toggle} size="md">
         <ModalWrapper>
           <ModalBody>
@@ -25,55 +31,27 @@ const CandidateMessage = () => {
               />
             </div>
 
-            <div>
-              <h3>
-                From: Ken Liam <span>(kliam@clirecruit.com)</span>
-              </h3>
-              <h3>To: Me</h3>
-              <h4>Subject: Interview Invite</h4>
-            </div>
-
-            <div>
-              <p>Mode: Live Meet</p>
-
-              <ul>
-                <li>Schedule</li>
-                <li>Date: 21/06/2020</li>
-                <li>Time: 10am</li>
-                <li>
-                  Location: Clime Recruit Office, 8, Holly Street, SC, Canada
-                </li>
-              </ul>
-
-              <ul>
-                <li>Interviewers:</li>
-                <li>James Urbrey: jurbrey@climerecruit.com</li>
-                <li>Cynthia Adam - caclime@climerecruit.com</li>
-              </ul>
-            </div>
-
-            <div>
-              <h5>Hi, Wayne</h5>
-              <h5>
-                My name is Ken from Clime Recruits. We would like to have a meet
-                with you. Please <br /> make it to above location on the
-                scheduled date and time.
-              </h5>
-
-              <h5>Thanks</h5>
-              <PrimaryButton>REPLY</PrimaryButton>
-            </div>
             <form>
               <div>
-                <h3>From: Me</h3>
-                <h3>
-                  To: Ken Liam <span>kliam@climerecruit.com</span>
-                </h3>
-                <GRID>
-                  <TextArea />
-                  <PrimaryButton>SEND</PrimaryButton>
-                  <Link>Cancel</Link>
-                </GRID>
+                <h1>Login</h1>
+                <span>Don't have an account?</span>
+
+                <Signup />
+              </div>
+              <div>
+                <input type="text" placeholder="Email" />
+              </div>
+              <div>
+                <input type="password" placeholder="Password" />
+              </div>
+              <div>
+                <Link>forget password?</Link>
+              </div>
+              <div>
+                {/* this is for testing purposes */}
+                <LoginLink onClick={toggle} to="/upload" fullwidth>
+                  LOGIN
+                </LoginLink>
               </div>
             </form>
           </ModalBody>
@@ -83,7 +61,21 @@ const CandidateMessage = () => {
   );
 };
 
+const LoginLink = styled(PrimaryLink)`
+  display: block;
+  background-color: #606c86;
+  color: #fff;
+  border: none;
+
+  &:hover {
+    color: #fff;
+  }
+`;
+
 const ModalWrapper = styled.section`
+  .close {
+    cursor: pointer;
+  }
   form {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -143,4 +135,4 @@ const ModalWrapper = styled.section`
   }
 `;
 
-export default CandidateMessage;
+export default SignIn;

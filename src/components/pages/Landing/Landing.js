@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { values } from "../../../components/Landing/Values";
 import FadeIn from "react-fade-in";
@@ -10,6 +11,9 @@ const Landing = () => {
   return (
     <>
       <FadeIn transitionDuration="600">
+        <Helmet>
+          <title>Tamalan</title>
+        </Helmet>
         <section className="landingFirstSection">
           <article>
             <h2>
@@ -115,7 +119,7 @@ const Landing = () => {
         <section className="landingFifthSection">
           <article>
             <figure>
-              <Link to="/list">
+              <Link to="/graphics">
                 <img src={require("../../../assets/img/16.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -129,7 +133,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/list">
+              <Link to="/fonts">
                 <img src={require("../../../assets/img/17.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -143,7 +147,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/list">
+              <Link to="/animations">
                 <img src={require("../../../assets/img/18.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -157,7 +161,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/list">
+              <Link to="/modelstextures">
                 <img src={require("../../../assets/img/19.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -171,7 +175,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/list">
+              <Link to="/fonts">
                 <img src={require("../../../assets/img/20.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -185,7 +189,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/list">
+              <Link to="/photosimages">
                 <img src={require("../../../assets/img/21.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -199,7 +203,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/list">
+              <Link to="/musicsound">
                 <img src={require("../../../assets/img/22.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -213,7 +217,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/list">
+              <Link to="/photosimages">
                 <img src={require("../../../assets/img/23.png")} alt="" />
               </Link>
               <div className="item-description">
@@ -227,7 +231,7 @@ const Landing = () => {
             </figure>
 
             <figure>
-              <Link to="/list">
+              <Link to="/fonts">
                 <img src={require("../../../assets/img/24.png")} alt="" />
               </Link>
               <div className="item-description">

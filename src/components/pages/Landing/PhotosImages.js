@@ -1,25 +1,21 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import FadeIn from "react-fade-in";
+import SearchNav from "../../SearchNav";
 import "../../../css/list.scss";
 
-const List = () => {
+const PhotosImages = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
       <FadeIn transitionDuration="600">
-        <section className="listsearchSection">
-          <article>
-            <h1>Graphics & Vectors</h1>
-          </article>
-          <article>
-            <form>
-              <input type="text" placeholder="Search here" />
-            </form>
-          </article>
-        </section>
+        <Helmet>
+          <title>Photos & Images</title>
+        </Helmet>
+        <SearchNav />
         <section className="listSecondSection">
           <figure>
             <Link to="/list">
@@ -32,7 +28,7 @@ const List = () => {
               </div>
               <span>$17</span>
             </div>
-            <h3>Graphics & Vectors</h3>
+            <h3>PhotosImages & Vectors</h3>
           </figure>
 
           <figure>
@@ -46,7 +42,7 @@ const List = () => {
               </div>
               <span>$17</span>
             </div>
-            <h3>Graphics & Vectors</h3>
+            <h3>PhotosImages & Vectors</h3>
           </figure>
 
           <figure>
@@ -60,7 +56,7 @@ const List = () => {
               </div>
               <span>$19</span>
             </div>
-            <h3>Graphics & Vectors</h3>
+            <h3>PhotosImages & Vectors</h3>
           </figure>
 
           <figure>
@@ -74,7 +70,7 @@ const List = () => {
               </div>
               <span>$25</span>
             </div>
-            <h3>Graphics & Vectors</h3>
+            <h3>PhotosImages & Vectors</h3>
           </figure>
 
           <figure>
@@ -88,7 +84,7 @@ const List = () => {
               </div>
               <span>$17</span>
             </div>
-            <h3>Graphics & Vectors</h3>
+            <h3>PhotosImages & Vectors</h3>
           </figure>
 
           <figure>
@@ -102,7 +98,7 @@ const List = () => {
               </div>
               <span>$17</span>
             </div>
-            <h3>Graphics & Vectors</h3>
+            <h3>PhotosImages & Vectors</h3>
           </figure>
 
           <figure>
@@ -116,7 +112,7 @@ const List = () => {
               </div>
               <span>$25</span>
             </div>
-            <h3>Graphics & Vectors</h3>
+            <h3>PhotosImages & Vectors</h3>
           </figure>
 
           <figure>
@@ -130,7 +126,7 @@ const List = () => {
               </div>
               <span>$17</span>
             </div>
-            <h3>Graphics & Vectors</h3>
+            <h3>PhotosImages & Vectors</h3>
           </figure>
 
           <figure>
@@ -144,7 +140,7 @@ const List = () => {
               </div>
               <span>$17</span>
             </div>
-            <h3>Graphics & Vectors</h3>
+            <h3>PhotosImages & Vectors</h3>
           </figure>
 
           <figure>
@@ -158,7 +154,7 @@ const List = () => {
               </div>
               <span>$19</span>
             </div>
-            <h3>Graphics & Vectors</h3>
+            <h3>PhotosImages & Vectors</h3>
           </figure>
 
           <figure>
@@ -172,7 +168,7 @@ const List = () => {
               </div>
               <span>$17</span>
             </div>
-            <h3>Graphics & Vectors</h3>
+            <h3>PhotosImages & Vectors</h3>
           </figure>
 
           <figure>
@@ -186,7 +182,7 @@ const List = () => {
               </div>
               <span>$17</span>
             </div>
-            <h3>Graphics & Vectors</h3>
+            <h3>PhotosImages & Vectors</h3>
           </figure>
         </section>
       </FadeIn>
@@ -194,4 +190,4 @@ const List = () => {
   );
 };
 
-export default List;
+export default PhotosImages;

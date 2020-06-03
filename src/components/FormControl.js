@@ -1,38 +1,39 @@
 import styled from "styled-components";
 
 export const TextInput = styled.input`
-  border: 1px solid #40759d;
+  border: 2px solid #ddd;
   border-radius: 4px;
-  color: $tertiary-color;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding-left: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 `;
 
 export const TextArea = styled.textarea`
-  border: 1px solid #40759d;
+  border: 2px solid #ddd;
   border-radius: 4px;
-  color: $tertiary-color;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding-left: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  margin-bottom: 1.5rem;
   width: 100%;
   resize: none;
+  font-weight: 600;
 `;
 
 export const Select = styled.select`
-  border: 1px solid #40759d;
+  border: 2px solid #ddd;
   border-radius: 4px;
-  color: $tertiary-color;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding-left: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: grey;
 `;
 
 export const Title = styled.article`
@@ -72,8 +73,7 @@ export const HALFGRID = styled.article`
 
 export const UNEQUALEDGRID = styled.article`
   display: grid;
-  grid-template-columns: ${(props) =>
-    props.first ? "1fr 3fr 2fr" : "3fr 2fr 1fr"};
+  grid-template-columns: 0.5fr 1fr;
   column-gap: 1rem;
   @media (max-width: 992px) {
     grid-template-columns: 1fr;
