@@ -15,7 +15,7 @@ const ModelsTextures = () => {
         <Helmet>
           <title>Models & Textures</title>
         </Helmet>
-        <SearchNav />
+        <SearchNav title="3D Models & Textures" />
         <section className="listSecondSection">
           <figure>
             <Link to="/list">

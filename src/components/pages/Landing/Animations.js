@@ -15,7 +15,7 @@ const Animations = () => {
         <Helmet>
           <title>Animations</title>
         </Helmet>
-        <SearchNav />
+        <SearchNav title="Motions & Animations" />
         <section className="listSecondSection">
           <figure>
             <Link to="/list">

@@ -10,7 +10,7 @@ const Product = () => {
     <>
       <FadeIn transitionDuration="600">
         <Helmet>
-          <title>Product</title>
+          <title>product</title>
         </Helmet>
         <SearchNav />
         <section className="productFirstSection">

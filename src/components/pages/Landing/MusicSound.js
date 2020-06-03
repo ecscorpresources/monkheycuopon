@@ -15,7 +15,7 @@ const MusicSound = () => {
         <Helmet>
           <title>Musics & Sound</title>
         </Helmet>
-        <SearchNav />
+        <SearchNav title="Music & Sound" />
         <section className="listSecondSection">
           <figure>
             <Link to="/list">

@@ -15,7 +15,7 @@ const Fonts = () => {
         <Helmet>
           <title>Fonts</title>
         </Helmet>
-        <SearchNav />
+        <SearchNav title="Fonts" />
         <section className="listSecondSection">
           <figure>
             <Link to="/list">

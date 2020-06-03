@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-const SearchNav = () => {
+const SearchNav = ({ title }) => {
   return (
     <>
       <SearchWrapper>
         <article>
-          <h1>Product Upload Form</h1>
+          <h1>{title}</h1>
         </article>
         <article>
           <form>
@@ -27,6 +27,11 @@ const SearchWrapper = styled.section`
   @media (max-width: 576px) {
     flex-direction: column;
   }
+
+  & h1 {
+    color: #0c74c4;
+  }
+
   padding: 2rem 4rem;
   article:nth-child(2) {
     flex-basis: 30%;
@@ -34,6 +39,7 @@ const SearchWrapper = styled.section`
     @media (max-width: 992px) {
       flex-basis: 20%;
     }
+
     & form {
       padding: 0;
       input {

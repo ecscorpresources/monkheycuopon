@@ -15,7 +15,7 @@ const Graphics = () => {
         <Helmet>
           <title>Graphics & Vectors</title>
         </Helmet>
-        <SearchNav />
+        <SearchNav title="Graphics & Vectors" />
         <section className="listSecondSection">
           <figure>
             <Link to="/list">

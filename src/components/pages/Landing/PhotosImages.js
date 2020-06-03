@@ -15,7 +15,7 @@ const PhotosImages = () => {
         <Helmet>
           <title>Photos & Images</title>
         </Helmet>
-        <SearchNav />
+        <SearchNav title="Photos & Images" />
         <section className="listSecondSection">
           <figure>
             <Link to="/list">
