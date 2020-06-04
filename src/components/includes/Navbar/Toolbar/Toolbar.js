@@ -76,12 +76,42 @@ const Toolbar = (props) => {
           </article>
 
           <ul className="login_signup">
-            <li>
-              <Signin />
-            </li>
-            <li>
-              <Signup />
-            </li>
+            {location === "/" ? (
+              <li>
+                <div>
+                  <Signin />
+                </div>
+                <div>
+                  <Signup />
+                </div>
+              </li>
+            ) : (
+              <li className="dashbaord-dropdown">
+                <article>
+                  <img
+                    src={require("../../../../assets/img/76.png")}
+                    alt="user"
+                  />
+                  <h5>Johnstine</h5>
+                </article>
+
+                <ul>
+                  <li>
+                    <Link to="/dashboard">Dashboard</Link>
+                  </li>
+                  <li>
+                    <Link to="/messages">Message</Link>
+                  </li>
+
+                  <li>
+                    <Link to="/settings">Settings</Link>
+                  </li>
+                  <li>
+                    <Link to="/dashboard">Logout</Link>
+                  </li>
+                </ul>
+              </li>
+            )}
           </ul>
         </div>
       </nav>

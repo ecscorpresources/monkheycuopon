@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { values } from "../../../components/Landing/Values";
 import FadeIn from "react-fade-in";
+import Hero from "../../Hero";
 
 const Landing = () => {
   useEffect(() => {
@@ -14,7 +15,8 @@ const Landing = () => {
         <Helmet>
           <title>Tamalan</title>
         </Helmet>
-        <section className="landingFirstSection">
+
+        <Hero>
           <article>
             <h2>
               Get Exactly What You Need <br /> For All Your Creative Projects
@@ -24,7 +26,8 @@ const Landing = () => {
               collection of digital products and resources
             </p>
           </article>
-        </section>
+        </Hero>
+        {/* <section className="landingFirstSection"></section> */}
 
         <section className="landingSecondSection">
           {values.map((value, index) => (
@@ -130,6 +133,11 @@ const Landing = () => {
                 <span>$17</span>
               </div>
               <h3>Graphics & Vectors</h3>
+              <div className="save_like">
+                <img src={require("../../../assets/img/12.png")} alt="save" />
+
+                <img src={require("../../../assets/img/14.png")} alt="like" />
+              </div>
             </figure>
 
             <figure>

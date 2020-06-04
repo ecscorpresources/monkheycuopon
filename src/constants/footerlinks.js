@@ -6,16 +6,16 @@ export const link1 = [
 
   {
     text: "Graphics & Vectors",
-    path: "/",
+    path: "/graphics",
   },
 
   {
     text: "Photos & Images",
-    path: "/",
+    path: "/photosimages",
   },
   {
-    text: "Motion & Grphics",
-    path: "/",
+    text: "Motion & Animations",
+    path: "/animations",
   },
 ];
 
@@ -27,16 +27,16 @@ export const link2 = [
 
   {
     text: "Music & Sounds",
-    path: "/",
+    path: "/musicsound",
   },
 
   {
     text: "3D Models & Textures",
-    path: "/",
+    path: "/modelstextures",
   },
   {
     text: "Fonts & logos",
-    path: "/",
+    path: "/fonts",
   },
 ];
 

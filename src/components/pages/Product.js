@@ -12,7 +12,7 @@ const Product = () => {
         <Helmet>
           <title>product</title>
         </Helmet>
-        <SearchNav />
+        <SearchNav title="Product View" />
         <section className="productFirstSection">
           <span>$5</span>
           <h5>Adobe Digital Design</h5>

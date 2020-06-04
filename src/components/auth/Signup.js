@@ -57,11 +57,7 @@ const SignUp = () => {
               </div>
               <div>
                 {/* this is for testing purposes */}
-                <SignupLink
-                  onClick={toggle}
-                  to="/dashboard-recruiter"
-                  fullwidth
-                >
+                <SignupLink onClick={toggle} to="/" fullwidth>
                   SIGNUP
                 </SignupLink>
                 <span>

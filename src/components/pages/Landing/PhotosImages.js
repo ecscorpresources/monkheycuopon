@@ -16,6 +16,15 @@ const PhotosImages = () => {
           <title>Photos & Images</title>
         </Helmet>
         <SearchNav title="Photos & Images" />
+        <section className="filter">
+          <select name="illustrations" id="illustrations">
+            <option value="illustrations">Illustrators</option>
+          </select>
+
+          <select name="otherfilter" id="otherfilter">
+            <option value="otherfilter">Other Filter</option>
+          </select>
+        </section>
         <section className="listSecondSection">
           <figure>
             <Link to="/list">

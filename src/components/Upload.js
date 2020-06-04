@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { MdComputer } from "react-icons/md";
@@ -17,13 +17,16 @@ import FadeIn from "react-fade-in";
 import "../css/upload.scss";
 
 const Upload = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <FadeIn transitionDuration="600">
         <Helmet>
           <title>upload</title>
         </Helmet>
-        <SearchNav />
+        <SearchNav title="Product Upload Form" dashboard />
         <section className="uploadSecondSection">
           <form>
             <EQUALGRID>

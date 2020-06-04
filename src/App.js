@@ -12,6 +12,10 @@ import PhotosImages from "./components/pages/Landing/PhotosImages";
 import MusicSound from "./components/pages/Landing/MusicSound";
 import Product from "./components/pages/Product";
 import Upload from "./components/Upload";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Settings from "./components/Dashboard/Settings";
+import ChangePassword from "./components/Dashboard/ChangePassword";
+import Message from "./components/Dashboard/Message";
 
 function App() {
   return (
@@ -28,6 +32,10 @@ function App() {
           <Route exact path="/musicsound" component={MusicSound} />
           <Route exact path="/product" component={Product} />
           <Route exact path="/upload" component={Upload} />
+          <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/settings" component={Settings} />
+          <Route exact path="/changepassword" component={ChangePassword} />
+          <Route exact path="/messages" component={Message} />
         </Switch>
 
         <Footer />

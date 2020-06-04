@@ -49,7 +49,7 @@ const SignIn = (props) => {
               </div>
               <div>
                 {/* this is for testing purposes */}
-                <LoginLink onClick={toggle} to="/upload" fullwidth>
+                <LoginLink onClick={toggle} to="/dashboard" fullwidth>
                   LOGIN
                 </LoginLink>
               </div>

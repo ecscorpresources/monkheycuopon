@@ -15,7 +15,17 @@ const Graphics = () => {
         <Helmet>
           <title>Graphics & Vectors</title>
         </Helmet>
+
         <SearchNav title="Graphics & Vectors" />
+        <section className="filter">
+          <select name="illustrations" id="illustrations">
+            <option value="illustrations">Illustrators</option>
+          </select>
+
+          <select name="otherfilter" id="otherfilter">
+            <option value="otherfilter">Other Filter</option>
+          </select>
+        </section>
         <section className="listSecondSection">
           <figure>
             <Link to="/list">
