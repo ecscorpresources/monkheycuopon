@@ -6,6 +6,7 @@ import SearchNav from "../SearchNav";
 import { GRID, HALFGRID, EQUALGRID, Select, TextInput } from "../FormControl";
 import { MdPhotoCamera } from "react-icons/md";
 import styled from "styled-components";
+import icon from "../../assets/img/99.png";
 import "../../css/settings.scss";
 
 const Settings = () => {
@@ -137,6 +138,12 @@ const SettingsWrapper = styled.section`
     padding: 0.8rem 4rem;
     font-family: "Open Sans", sans-serif;
     border-radius: 4px;
+  }
+
+  select {
+    background: url(${icon});
+    background-repeat: no-repeat;
+    background-position: 95% center;
   }
 
   .file {

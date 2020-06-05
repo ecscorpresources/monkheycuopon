@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Modal, ModalBody } from "reactstrap";
+import icon from "../../assets/img/99.png";
 
 import { GRID, EQUALGRID } from "../FormControl";
 import styled from "styled-components";
@@ -127,6 +128,9 @@ const ModalWrapper = styled.section`
     }
 
     select {
+      background: url(${icon});
+      background-repeat: no-repeat;
+      background-position: 95% center;
       border: none;
       border-radius: 4px;
       font-size: 1.4rem;

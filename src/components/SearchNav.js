@@ -44,6 +44,7 @@ const SearchWrapper = styled.section`
   & h1 {
     color: #0c74c4;
     margin-right: 5rem;
+    font-size: 2rem !important;
   }
 
   padding: 2rem 4rem;
