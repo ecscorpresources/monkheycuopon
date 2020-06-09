@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import FadeIn from "react-fade-in";
 import { HALFGRID, TextInput } from "../FormControl";
 import SearchNav from "../SearchNav";
 import ForgotPassword from "./ForgotPassword";
+import "../../css/changepassword.scss";
 
 const ChangePassword = () => {
   return (
@@ -17,8 +18,12 @@ const ChangePassword = () => {
         <SearchNav title="Change Password" dashboard />
         <SettingsWrapper className="settingsFirstSection">
           <div>
-            <Link to="/settings">Edit Profile</Link>
-            <Link to="/changepassword">Change Password</Link>
+            <NavLink activeClassName="active" to="/settings">
+              Edit Profile
+            </NavLink>
+            <NavLink activeClassName="active" to="/changepassword">
+              Change Password
+            </NavLink>
           </div>
 
           <div>
@@ -74,6 +79,7 @@ const SettingsWrapper = styled.section`
     color: #0c74c4;
     display: inline-block;
     margin-bottom: 4rem;
+    padding: 0.5rem 1.5rem;
 
     &:hover {
       font-size: 1.5rem;
