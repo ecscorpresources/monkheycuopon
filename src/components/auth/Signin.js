@@ -45,11 +45,11 @@ const SignIn = (props) => {
                 <input type="password" placeholder="Password" />
               </div>
               <div>
-                <Link>forget password?</Link>
+                <Link to="/">forget password?</Link>
               </div>
               <div>
                 {/* this is for testing purposes */}
-                <LoginLink onClick={toggle} to="/dashboard" fullwidth>
+                <LoginLink onClick={toggle} to="/dashboard">
                   LOGIN
                 </LoginLink>
               </div>

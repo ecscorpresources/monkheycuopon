@@ -59,8 +59,8 @@ const Toolbar = (props) => {
 
           <article>
             <ul>
-              {navlinks.map((link) => (
-                <li>
+              {navlinks.map((link, index) => (
+                <li key={index}>
                   <Link to={link.path}>{link.text}</Link>
                 </li>
               ))}
@@ -68,7 +68,7 @@ const Toolbar = (props) => {
             {location === "/" && (
               <form>
                 <input
-                  type="text"
+                  type="search"
                   placeholder="Search for Templates, Pictures, Music and More"
                 />
               </form>

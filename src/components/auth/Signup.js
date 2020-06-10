@@ -10,7 +10,9 @@ const SignUp = () => {
   const closeModal = () => setModal(!modal);
   return (
     <>
-      <Link onClick={toggle}>SignUp</Link>
+      <Link to="/" onClick={toggle}>
+        SignUp
+      </Link>
       <Modal isOpen={modal} toggle={toggle} size="md">
         <ModalWrapper>
           <ModalBody>
@@ -57,7 +59,7 @@ const SignUp = () => {
               </div>
               <div>
                 {/* this is for testing purposes */}
-                <SignupLink onClick={toggle} to="/" fullwidth>
+                <SignupLink onClick={toggle} to="/">
                   SIGNUP
                 </SignupLink>
                 <span>

@@ -23,7 +23,6 @@ class Navbar extends Component {
 
   render() {
     const location = this.props.location.pathname;
-    console.log(location);
 
     let myBackdrop;
     if (this.state.SideDrawerOpen) {
