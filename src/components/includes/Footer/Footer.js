@@ -60,7 +60,7 @@ const Footer = () => {
             ))}
           </ul>
         </article>
-        <p>&copy; 2020 Tamalan. All Rights Reserved</p>
+        <p>&copy; 2020 A,1000 Cuopons. All Rights Reserved</p>
       </footer>
     </>
   );
