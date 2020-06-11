@@ -2,7 +2,6 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import FadeIn from "react-fade-in";
-import SearchNav from "../SearchNav";
 import "../../css/dashboard.scss";
 import styled from "styled-components";
 
@@ -13,35 +12,34 @@ const Dashboard = () => {
         <Helmet>
           <title>dashboard</title>
         </Helmet>
-        <SearchNav title="Dashboard" dashboard />
 
-        <section className="dashboardFirstSection">
+        <section className="dashboard">
           <article>
             <div>
               <img
-                src={require("../../assets/img/86.png")}
+                src={require("../../assets/img/35.png")}
                 alt="total upload"
               />
               <h4>Total</h4>
-              <p>Product Uploaded</p>
+              <p>Cuopons Uploaded</p>
             </div>
 
             <div>
               <img
-                src={require("../../assets/img/87.png")}
+                src={require("../../assets/img/36.png")}
                 alt="total upload"
               />
               <h4>Total</h4>
-              <p>Product Downloaded</p>
+              <p>Cuopons Viewed</p>
             </div>
 
             <div>
               <img
-                src={require("../../assets/img/88.png")}
+                src={require("../../assets/img/37.png")}
                 alt="total upload"
               />
               <h4>Total</h4>
-              <p>Money Made</p>
+              <p>Cuopons Clicked</p>
             </div>
           </article>
         </section>
@@ -49,7 +47,8 @@ const Dashboard = () => {
         <section className="dashboardSecondSection">
           <article>
             <div className="table-title">
-              <h3>Sales</h3>
+              <h3>Uploaded Cuopons</h3>
+              <Link to="/uploadcuopon">UPLOAD CUOPON</Link>
             </div>
             <table>
               <thead>
@@ -57,16 +56,16 @@ const Dashboard = () => {
                   <th>
                     <input type="checkbox" name="" id="" />
                   </th>
-                  <th>Product Title</th>
-                  <th>Date</th>
-                  <th>Category</th>
-                  <th>Price</th>
-                  <th>No. of Downloads</th>
-                  <th>Cash Mode</th>
+                  <th>Cuopons</th>
+                  <th>Date Updated</th>
+                  <th>Cuopon Types</th>
+                  <th>Views</th>
+                  <th>Clicks</th>
+                  <th>Expiry Date</th>
                   <th>
                     <td>
                       <img
-                        src={require("../../assets/img/98.png")}
+                        src={require("../../assets/img/38.png")}
                         alt="delete"
                       />
                     </td>
@@ -78,14 +77,14 @@ const Dashboard = () => {
                   <td>
                     <input type="checkbox" name="" id="" />
                   </td>
-                  <td>Set of 60 Business Icons</td>
+                  <td>Up to 18% Off</td>
                   <td>04/09/19</td>
-                  <td>Graphics & Vectors</td>
-                  <td>$35</td>
-                  <td>56</td>
-                  <td>$1,750</td>
+                  <td>50% Off</td>
+                  <td>236</td>
+                  <td>214</td>
+                  <td>04/09/19</td>
                   <td>
-                    <TableLink>Edit Product</TableLink>
+                    <TableLink>Edit Cuopon</TableLink>
                   </td>
                 </tr>
 
@@ -93,14 +92,28 @@ const Dashboard = () => {
                   <td>
                     <input type="checkbox" name="" id="" />
                   </td>
-                  <td>Set of 60 Business Icons</td>
+                  <td>Up to 18% Off</td>
                   <td>04/09/19</td>
-                  <td>Graphics & Vectors</td>
-                  <td>$35</td>
-                  <td>56</td>
-                  <td>$1,750</td>
+                  <td>50% Off</td>
+                  <td>236</td>
+                  <td>214</td>
+                  <td>04/09/19</td>
                   <td>
-                    <TableLink>Edit Product</TableLink>
+                    <TableLink>Edit Cuopon</TableLink>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" name="" id="" />
+                  </td>
+                  <td>Up to 18% Off</td>
+                  <td>04/09/19</td>
+                  <td>50% Off</td>
+                  <td>236</td>
+                  <td>214</td>
+                  <td>04/09/19</td>
+                  <td>
+                    <TableLink>Edit Cuopon</TableLink>
                   </td>
                 </tr>
 
@@ -108,97 +121,18 @@ const Dashboard = () => {
                   <td>
                     <input type="checkbox" name="" id="" />
                   </td>
-                  <td>Set of 60 Business Icons</td>
+                  <td>Up to 18% Off</td>
                   <td>04/09/19</td>
-                  <td>Graphics & Vectors</td>
-                  <td>$35</td>
-                  <td>56</td>
-                  <td>$1,750</td>
+                  <td>50% Off</td>
+                  <td>236</td>
+                  <td>214</td>
+                  <td>04/09/19</td>
                   <td>
-                    <TableLink>Rate Product</TableLink>
+                    <TableLink>Edit Cuopon</TableLink>
                   </td>
                 </tr>
               </tbody>
             </table>
-
-            <div className="table-title">
-              <h3>Purchases</h3>
-            </div>
-            <table>
-              <thead>
-                <tr>
-                  <th>
-                    <input type="checkbox" name="" id="" />
-                  </th>
-                  <th>Product Title</th>
-                  <th>Date</th>
-                  <th>Category</th>
-                  <th>Price</th>
-                  <th>No. of Downloads</th>
-                  <th>Cash Mode</th>
-                  <th>
-                    <td>
-                      <img
-                        src={require("../../assets/img/98.png")}
-                        alt="delete"
-                      />
-                    </td>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <input type="checkbox" name="" id="" />
-                  </td>
-                  <td>Set of 60 Business Icons</td>
-                  <td>04/09/19</td>
-                  <td>Graphics & Vectors</td>
-                  <td>$35</td>
-                  <td>56</td>
-                  <td>$1,750</td>
-                  <td>
-                    <TableLink>Rate Product</TableLink>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <input type="checkbox" name="" id="" />
-                  </td>
-                  <td>Set of 60 Business Icons</td>
-                  <td>04/09/19</td>
-                  <td>Graphics & Vectors</td>
-                  <td>$35</td>
-                  <td>56</td>
-                  <td>$1,750</td>
-                  <td>
-                    <TableLink>Rate Product</TableLink>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <input type="checkbox" name="" id="" />
-                  </td>
-                  <td>Set of 60 Business Icons</td>
-                  <td>04/09/19</td>
-                  <td>Graphics & Vectors</td>
-                  <td>$35</td>
-                  <td>56</td>
-                  <td>$1,750</td>
-                  <td>
-                    <TableLink>Edit Product</TableLink>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </article>
-          <article>
-            {/* there should be a form around the whole page */}
-            <Link to="/upload" type="submit">
-              Upload Product
-            </Link>
           </article>
         </section>
       </FadeIn>

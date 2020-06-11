@@ -4,9 +4,8 @@ import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import FadeIn from "react-fade-in";
 import { HALFGRID, TextInput } from "../FormControl";
-import SearchNav from "../SearchNav";
-import ForgotPassword from "./ForgotPassword";
 import "../../css/changepassword.scss";
+import ForgotPassword from "../ForgotPassword";
 
 const ChangePassword = () => {
   return (
@@ -15,10 +14,9 @@ const ChangePassword = () => {
         <Helmet>
           <title>dashboard</title>
         </Helmet>
-        <SearchNav title="Change Password" dashboard />
         <SettingsWrapper className="settingsFirstSection">
           <div>
-            <NavLink activeClassName="active" to="/settings">
+            <NavLink activeClassName="active" to="/profile">
               Edit Profile
             </NavLink>
             <NavLink activeClassName="active" to="/changepassword">
@@ -99,7 +97,7 @@ const SettingsWrapper = styled.section`
     }
     button {
       color: #fff;
-      background-color: #094a6a;
+      background-color: #1d9ed8;
       border: none;
       text-decoration: none;
       text-align: center;
@@ -107,7 +105,7 @@ const SettingsWrapper = styled.section`
       font-size: 1.5rem;
       padding: 0.8rem 4rem;
       font-family: "Open Sans", sans-serif;
-      border-radius: 4px;
+      border-radius: 50px;
     }
 
     a {

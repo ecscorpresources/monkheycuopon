@@ -2,24 +2,23 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import FadeIn from "react-fade-in";
-import SearchNav from "../SearchNav";
-import { GRID, HALFGRID, EQUALGRID, Select, TextInput } from "../FormControl";
+import { GRID, HALFGRID, TextArea, TextInput } from "../FormControl";
 import { MdPhotoCamera } from "react-icons/md";
 import styled from "styled-components";
-import icon from "../../assets/img/99.png";
+import icon from "../../assets/img/38.png";
 import "../../css/settings.scss";
 
-const Settings = () => {
+const Profile = () => {
   return (
     <>
       <FadeIn transitionDuration="600">
         <Helmet>
           <title>dashboard</title>
         </Helmet>
-        <SearchNav title="Settings" dashboard />
+
         <SettingsWrapper className="settingsFirstSection">
           <div>
-            <NavLink activeClassName="active" to="/settings">
+            <NavLink activeClassName="active" to="/profile">
               Edit Profile
             </NavLink>
             <NavLink activeClassName="active" to="/changepassword">
@@ -28,12 +27,11 @@ const Settings = () => {
           </div>
 
           <div>
-            <p>Profile Info</p>
+            <p>User Profile</p>
 
             <form>
               <HALFGRID>
                 <section className="file">
-                  <h5>Avatar</h5>
                   <article>
                     <div>
                       <input
@@ -49,38 +47,20 @@ const Settings = () => {
                   </article>
                 </section>
               </HALFGRID>
-              <EQUALGRID>
-                <TextInput type="text" placeholder="First Name" />
-                <TextInput placeholder="Last Name" />
-              </EQUALGRID>
+              <HALFGRID>
+                <TextInput type="text" placeholder="Company/Store Name" />
+              </HALFGRID>
 
-              <EQUALGRID>
-                <TextInput type="text" placeholder="Username" />
-                <TextInput type="text" placeholder="Company Name" />
-              </EQUALGRID>
+              <HALFGRID>
+                <TextInput type="text" placeholder="Enter link" />
+              </HALFGRID>
 
               <GRID>
-                <TextInput type="email" placeholder="Company Name" />
-              </GRID>
-
-              <EQUALGRID>
-                <Select>
-                  <option value="Country">Country</option>
-                </Select>
-                <TextInput type="text" placeholder="Country Code" />
-              </EQUALGRID>
-
-              <EQUALGRID>
-                <TextInput type="text" placeholder="State/Province" />
-                <TextInput type="text" placeholder="City" />
-              </EQUALGRID>
-
-              <GRID>
-                <TextInput type="email" placeholder="Address" />
+                <TextArea placeholder="About Company" />
               </GRID>
 
               <article>
-                <button type="submit">Upload Profile</button>
+                <button type="submit">UPDATE PROFILE</button>
               </article>
             </form>
           </div>
@@ -129,15 +109,15 @@ const SettingsWrapper = styled.section`
 
   button {
     color: #fff;
-    background-color: #094a6a;
+    background-color: #1d9ed8;
     border: none;
     text-decoration: none;
     text-align: center;
     display: inline-block;
     font-size: 1.5rem;
-    padding: 0.8rem 4rem;
+    padding: 1rem 4rem;
     font-family: "Open Sans", sans-serif;
-    border-radius: 4px;
+    border-radius: 50px;
   }
 
   select {
@@ -147,8 +127,6 @@ const SettingsWrapper = styled.section`
   }
 
   .file {
-    border: 2px dashed #cfddf1;
-    background-color: #ecf2fa;
     margin-bottom: 1.5rem;
     padding: 0 1rem 1rem 1rem;
     border-radius: 5px;
@@ -192,4 +170,4 @@ const SettingsWrapper = styled.section`
   }
 `;
 
-export default Settings;
+export default Profile;

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import heroimagelarge from "../assets/img/02.png";
-// import heroimagesmall from "../assets/img/83.png";
 
 const Hero = ({ children }) => {
   return <HeroWrapper>{children}</HeroWrapper>;

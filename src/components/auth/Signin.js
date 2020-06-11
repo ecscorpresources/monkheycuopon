@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Modal, ModalBody } from "reactstrap";
 import { PrimaryLink } from "../../globals/links-button";
-import Signup from "./Signup";
+import ForgetPassword from "../ForgotPassword";
 import styled from "styled-components";
 
 const SignIn = (props) => {
@@ -11,15 +11,9 @@ const SignIn = (props) => {
   const closeModal = () => setModal(!modal);
   return (
     <>
-      {props.jobalert ? (
-        <PrimaryLink to="/" onClick={toggle}>
-          LOGIN
-        </PrimaryLink>
-      ) : (
-        <PrimaryLink primary="true" to="/" onClick={toggle}>
-          LOGIN
-        </PrimaryLink>
-      )}
+      <Link primary="true" to="/" onClick={toggle}>
+        LOGIN
+      </Link>
       <Modal isOpen={modal} toggle={toggle} size="md">
         <ModalWrapper>
           <ModalBody>
@@ -34,9 +28,10 @@ const SignIn = (props) => {
             <form>
               <div>
                 <h1>Login</h1>
-                <span>Don't have an account?</span>
-
-                <Signup />
+                <img
+                  src={require("../../assets/img/54.png")}
+                  alt="a 1000 cuopon logo"
+                />
               </div>
               <div>
                 <input type="text" placeholder="Email" />
@@ -45,7 +40,7 @@ const SignIn = (props) => {
                 <input type="password" placeholder="Password" />
               </div>
               <div>
-                <Link to="/">forget password?</Link>
+                <ForgetPassword />
               </div>
               <div>
                 {/* this is for testing purposes */}
@@ -63,7 +58,7 @@ const SignIn = (props) => {
 
 const LoginLink = styled(PrimaryLink)`
   display: block;
-  background-color: #606c86;
+  background-color: #1d9ed8;
   color: #fff;
   border: none;
 
@@ -79,12 +74,19 @@ const ModalWrapper = styled.section`
   form {
     padding-top: 40px;
     padding-bottom: 40px;
+
+    > div:first-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     & h1 {
       color: #2e5c71;
       font-size: 25px;
       font-family: "Open Sans", sans-serif;
       font-weight: bold;
-      padding-bottom: 1rem;
+      margin-bottom: 0;
     }
 
     & span {

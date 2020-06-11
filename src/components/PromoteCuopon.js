@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Modal, ModalBody } from "reactstrap";
-import { PrimaryLink } from "../../globals/links-button";
+import { PrimaryLink } from "../globals/links-button";
 import styled from "styled-components";
 
 const SignUp = () => {
@@ -10,15 +10,15 @@ const SignUp = () => {
   const closeModal = () => setModal(!modal);
   return (
     <>
-      <JoinLink to="/" onClick={toggle}>
-        Join For Free
-      </JoinLink>
+      <Link to="/" onClick={toggle}>
+        Sell
+      </Link>
       <Modal isOpen={modal} toggle={toggle} size="md">
         <ModalWrapper>
           <ModalBody>
             <div className="close">
               <img
-                src={require("../../assets/img/close.png")}
+                src={require("../assets/img/close.png")}
                 alt=""
                 onClick={closeModal}
               />
@@ -26,17 +26,14 @@ const SignUp = () => {
 
             <form>
               <div>
-                <h1>Register</h1>
+                <h1>Promote Your Cuopon</h1>
                 <img
-                  src={require("../../assets/img/54.png")}
+                  src={require("../assets/img/54.png")}
                   alt="a 1000 cuopon logo"
                 />
               </div>
               <div>
-                <input type="text" placeholder="First Name" />
-              </div>
-              <div>
-                <input type="text" placeholder="Last Name" />
+                <input type="text" placeholder="Company/Store Name" />
               </div>
               <div>
                 <input type="text" placeholder="Email" />
@@ -57,7 +54,7 @@ const SignUp = () => {
                 </div>
                 <p>
                   I have read and agreed to the Terms and Conditions on the use
-                  of Monkhey and Tamalan
+                  of Monkhey and A1000Cuopons
                 </p>
               </div>
               <div>
@@ -66,7 +63,7 @@ const SignUp = () => {
                   SIGNUP
                 </SignupLink>
                 <span>
-                  Signing Up on Tamalan gets you signed up on all Monkhey
+                  Signing Up on A1000Cuopons gets you signed up on all Monkhey
                   Services
                 </span>
               </div>
@@ -77,25 +74,6 @@ const SignUp = () => {
     </>
   );
 };
-
-const JoinLink = styled(Link)`
-  border: 2px solid #1d9ed8;
-  color: #1d9ed8;
-  background-color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: 400;
-  font-size: 1.4rem !important;
-  text-align: center;
-  border-radius: 50px;
-  padding: 3px 20px;
-  margin-bottom: 1rem;
-  font-family: "Open Sans", sans-serif;
-
-  &:hover {
-    text-decoration: none;
-  }
-`;
 
 const SignupLink = styled(PrimaryLink)`
   display: block;
@@ -120,6 +98,7 @@ const ModalWrapper = styled.section`
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 3rem;
     }
 
     & input {
@@ -135,7 +114,7 @@ const ModalWrapper = styled.section`
     }
 
     & h1 {
-      color: #2e5c71;
+      color: #1d9ed8;
       font-size: 25px;
       font-family: "Open Sans", sans-serif;
       font-weight: bold;
@@ -146,7 +125,7 @@ const ModalWrapper = styled.section`
       width: 85%;
       margin: auto;
 
-      &:not(:last-child) {
+      &:not(:first-child) {
         margin-bottom: 1rem;
       }
     }
@@ -156,7 +135,7 @@ const ModalWrapper = styled.section`
       font-size: 13px;
     }
 
-    & div:nth-child(7) {
+    & div:nth-child(6) {
       display: flex;
     }
 

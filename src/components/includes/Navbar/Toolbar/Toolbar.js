@@ -2,20 +2,17 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import "./Toolbar.scss";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
-import navlinks from "../../../../constants/navlinks";
-import Signin from "../../../auth/Signin";
-import Signup from "../../../auth/Signup";
 import { MdArrowDropDown } from "react-icons/md";
+import Signup from "../../../auth/Signup";
+import SignIn from "../../../auth/Signin";
+import PromoteCuopon from "../../../PromoteCuopon";
 
 const Toolbar = (props) => {
   const location = props.location.pathname;
 
   return (
     <header>
-      <nav
-        className="toolbar_navigation"
-        style={{ backgroundColor: "transparent" }}
-      >
+      <nav className="toolbar_navigation">
         <div className="toolbar_toggle_button">
           <DrawerToggleButton
             handleDrawerToggleClick={props.handleDrawerToggleClick}
@@ -24,7 +21,7 @@ const Toolbar = (props) => {
         <div className="toolbar_logo">
           <Link to="/">
             <img
-              src={require("../../../../assets/img/Tamalan.png")}
+              src={require("../../../../assets/img/a1000coupons_logo.png")}
               alt="logo"
             />
           </Link>
@@ -55,64 +52,66 @@ const Toolbar = (props) => {
                 </li>
               </ul>
             </li>
+            <li>
+              <Link to="/">Stores</Link>
+            </li>
+            <li>
+              <Link to="/">Hot Deals</Link>
+            </li>
+            <li>
+              <PromoteCuopon />
+            </li>
           </ul>
 
           <article>
-            <ul>
-              {navlinks.map((link, index) => (
-                <li key={index}>
-                  <Link to={link.path}>{link.text}</Link>
-                </li>
-              ))}
-            </ul>
             {location === "/" && (
               <form>
                 <input
-                  type="search"
+                  type="text"
                   placeholder="Search for Templates, Pictures, Music and More"
                 />
               </form>
             )}
+
+            <ul className="login_signup">
+              {location === "/" ? (
+                <li>
+                  <div className="signup">
+                    <Signup />
+                  </div>
+                  <div className="login">
+                    <SignIn />
+                  </div>
+                </li>
+              ) : (
+                <li className="dashbaord-dropdown">
+                  <div>
+                    <img
+                      src={require("../../../../assets/img/76.png")}
+                      alt="user"
+                    />
+                    <h5>Johnstine</h5>
+                  </div>
+
+                  <ul>
+                    <li>
+                      <Link to="/dashboard">Dashboard</Link>
+                    </li>
+                    <li>
+                      <Link to="/uploadcuopon">UploadCuopon</Link>
+                    </li>
+
+                    <li>
+                      <Link to="/profile">ProfileSettings</Link>
+                    </li>
+                    <li>
+                      <Link to="/dashboard">Logout</Link>
+                    </li>
+                  </ul>
+                </li>
+              )}
+            </ul>
           </article>
-
-          <ul className="login_signup">
-            {location === "/" ? (
-              <li>
-                <div>
-                  <Signin />
-                </div>
-                <div>
-                  <Signup />
-                </div>
-              </li>
-            ) : (
-              <li className="dashbaord-dropdown">
-                <article>
-                  <img
-                    src={require("../../../../assets/img/76.png")}
-                    alt="user"
-                  />
-                  <h5>Johnstine</h5>
-                </article>
-
-                <ul>
-                  <li>
-                    <Link to="/dashboard">Dashboard</Link>
-                  </li>
-                  <li>
-                    <Link to="/messages">Message</Link>
-                  </li>
-
-                  <li>
-                    <Link to="/settings">Settings</Link>
-                  </li>
-                  <li>
-                    <Link to="/dashboard">Logout</Link>
-                  </li>
-                </ul>
-              </li>
-            )}
-          </ul>
         </div>
       </nav>
     </header>
