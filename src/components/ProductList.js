@@ -14,6 +14,13 @@ const ProductList = () => {
         <Helmet>
           <title>ProductList</title>
         </Helmet>
+
+        <section className="filter">
+          <select name="illustrations" id="illustrations">
+            <option value="allcategories">View All Categories</option>
+          </select>
+        </section>
+
         <section className="productlist">
           <article>
             <figure>
