@@ -1,20 +1,16 @@
 import React from "react";
 import "./Footer.scss";
 import { Link } from "react-router-dom";
-import { link1, link2, link3 } from "../../../constants/footerlinks";
+import { link1, link2, link3, link4 } from "../../../constants/footerlinks";
 import footericons from "../../../constants/footericons";
 
 const Footer = () => {
   return (
     <>
-      <footer className="container-fluid">
+      <footer>
         <section>
           <article>
             <div>
-              <h4>
-                Tamalan is a platform for Creative Designers where they can buy
-                and sell
-              </h4>
               <ul className="links">
                 {link1.map((link, index) => (
                   <li key={index}>
@@ -30,11 +26,9 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-            </div>
 
-            <div>
               <ul className="links">
-                {link3.map((link, index) => (
+                {link4.map((link, index) => (
                   <li key={index}>
                     <Link to={link.path}>{link.text}</Link>
                   </li>
@@ -42,6 +36,7 @@ const Footer = () => {
               </ul>
             </div>
           </article>
+
           <article>
             <h5>Get in touch with us</h5>
             <ul className="socials">
@@ -55,6 +50,16 @@ const Footer = () => {
             </ul>
           </article>
         </section>
+
+        <article>
+          <ul className="links-2">
+            {link3.map((link, index) => (
+              <li key={index}>
+                <Link to={link.path}>{link.text}</Link>
+              </li>
+            ))}
+          </ul>
+        </article>
         <p>&copy; 2020 Tamalan. All Rights Reserved</p>
       </footer>
     </>

@@ -1,42 +1,29 @@
 export const link1 = [
   {
-    text: "Theme & Templates",
+    text: "Home",
     path: "/",
   },
 
   {
-    text: "Graphics & Vectors",
-    path: "/graphics",
-  },
-
-  {
-    text: "Photos & Images",
-    path: "/photosimages",
-  },
-  {
-    text: "Motion & Animations",
-    path: "/animations",
+    text: "Categories",
+    path: "/",
   },
 ];
 
 export const link2 = [
   {
-    text: "Scripts & Plugins",
+    text: "Why Sell with Us",
     path: "/",
   },
 
   {
-    text: "Music & Sounds",
-    path: "/musicsound",
+    text: "Stores",
+    path: "/",
   },
 
   {
-    text: "3D Models & Textures",
-    path: "/modelstextures",
-  },
-  {
-    text: "Fonts & logos",
-    path: "/fonts",
+    text: "Promote Your Items",
+    path: "/",
   },
 ];
 
@@ -57,6 +44,27 @@ export const link3 = [
   },
   {
     text: "About Us",
+    path: "/",
+  },
+];
+
+export const link4 = [
+  {
+    text: "Join For Free",
+    path: "/",
+  },
+
+  {
+    text: "Shop For Cuopon",
+    path: "/",
+  },
+
+  {
+    text: "Be The First",
+    path: "/",
+  },
+  {
+    text: "Hot Deals",
     path: "/",
   },
 ];
