@@ -111,7 +111,10 @@ const Dashboard = () => {
                   <td>50% Off</td>
                   <td>236</td>
                   <td>214</td>
-                  <td>04/09/19</td>
+                  <td>
+                    04/09/19
+                    <span>Expired</span>
+                  </td>
                   <td>
                     <TableLink>Edit Cuopon</TableLink>
                   </td>
@@ -126,7 +129,10 @@ const Dashboard = () => {
                   <td>50% Off</td>
                   <td>236</td>
                   <td>214</td>
-                  <td>04/09/19</td>
+                  <td>
+                    04/09/19
+                    <span>Expired</span>
+                  </td>
                   <td>
                     <TableLink>Edit Cuopon</TableLink>
                   </td>
@@ -147,10 +153,10 @@ const TableLink = styled(Link)`
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  font-size: 13px;
-  padding: 1px 15px;
+  padding: 0.7rem 2rem;
   font-family: "Open Sans", sans-serif;
   border-radius: 4px;
+  font-size: 1.3rem;
 
   &:hover {
     text-decoration: none;

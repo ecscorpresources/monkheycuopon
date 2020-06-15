@@ -74,7 +74,7 @@ const Toolbar = (props) => {
             )}
 
             <ul className="login_signup">
-              {location === "/" ? (
+              {location === "/" || location === "/productlist" ? (
                 <li>
                   <div className="signup">
                     <Signup />

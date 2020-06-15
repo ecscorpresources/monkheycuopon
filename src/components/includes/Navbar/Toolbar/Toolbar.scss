@@ -13,7 +13,8 @@
 .toolbar_navigation_items {
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  justify-content: space-between;
 
   .login {
     text-align: center;
@@ -35,14 +36,16 @@
   & ul.categories {
     margin-left: 8rem;
     display: flex;
-    width: 33%;
-    justify-content: space-between;
 
     li {
       position: relative;
       color: #727376;
       font-size: 1.4rem;
       cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 5rem;
+      }
 
       a {
         cursor: pointer;
@@ -146,8 +149,8 @@
 
   & article {
     width: 47%;
-    margin-left: auto;
     display: flex;
+    justify-content: flex-end;
 
     & form {
       padding: 0;

@@ -144,4 +144,15 @@
   table tbody tr {
     border-bottom: 1px solid #606c86;
   }
+
+  table tbody tr td span {
+    background: red;
+    color: #fff;
+    display: inline-block;
+    padding: 0.1rem 0.8rem;
+    border-radius: 4px;
+    margin-left: 1rem;
+    font-size: 11px;
+    vertical-align: middle;
+  }
 }
