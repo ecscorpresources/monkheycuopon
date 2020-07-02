@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Modal, ModalBody } from "reactstrap";
-// import { PrimaryLink } from "../globals/links-button";
 import styled from "styled-components";
 
 const SignUp = () => {
