@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import FadeIn from "react-fade-in";
 import { HALFGRID, TextInput } from "../../Globals/FormControl";
-import "../../css/changepassword.scss";
+import "../../styles/changepassword.scss";
 import ForgotPassword from "./ForgotPassword";
 
 const ChangePassword = () => {

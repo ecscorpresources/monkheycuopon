@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import FadeIn from "react-fade-in";
-import "../css/product.scss";
+import "../styles/product.scss";
 import Cuopon from "./Cuopon";
 import Filter from "../Globals/Filter";
 import { products } from "../data/products";

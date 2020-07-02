@@ -6,7 +6,7 @@ import { GRID, HALFGRID, TextArea, TextInput } from "../../Globals/FormControl";
 import { MdPhotoCamera } from "react-icons/md";
 import styled from "styled-components";
 import icon from "../../assets/img/38.png";
-import "../../css/settings.scss";
+import "../../styles/settings.scss";
 
 const Profile = () => {
   return (

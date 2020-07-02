@@ -12,7 +12,7 @@ import {
   TextInput,
 } from "../../Globals/FormControl";
 import FadeIn from "react-fade-in";
-import "../../css/uploadcuopon.scss";
+import "../../styles/uploadcuopon.scss";
 
 const UploadCuopon = () => {
   useEffect(() => {

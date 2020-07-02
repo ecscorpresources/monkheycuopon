@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import FadeIn from "react-fade-in";
-import "../../css/dashboard.scss";
+import "../../styles/dashboard.scss";
 import styled from "styled-components";
 
 const Dashboard = () => {
