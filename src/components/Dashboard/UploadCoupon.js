@@ -10,7 +10,7 @@ import {
   Select,
   TextArea,
   TextInput,
-} from "../FormControl";
+} from "../../Globals/FormControl";
 import FadeIn from "react-fade-in";
 import "../../css/uploadcuopon.scss";
 

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.scss";
 import { Link } from "react-router-dom";
-import { link1, link2, link3, link4 } from "../../../constants/footerlinks";
-import footericons from "../../../constants/footericons";
+import { link1, link2, link3, link4 } from "../../constants/footerlinks";
+import footericons from "../../constants/footericons";
 
 const Footer = () => {
   return (
@@ -60,7 +60,9 @@ const Footer = () => {
             ))}
           </ul>
         </article>
-        <p>&copy; 2020 A,1000 Cuopons. All Rights Reserved</p>
+        <p>
+          &copy; {new Date().getFullYear()} A,1000 Cuopons. All Rights Reserved
+        </p>
       </footer>
     </>
   );

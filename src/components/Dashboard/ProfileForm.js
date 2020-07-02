@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import FadeIn from "react-fade-in";
-import { GRID, HALFGRID, TextArea, TextInput } from "../FormControl";
+import { GRID, HALFGRID, TextArea, TextInput } from "../../Globals/FormControl";
 import { MdPhotoCamera } from "react-icons/md";
 import styled from "styled-components";
 import icon from "../../assets/img/38.png";

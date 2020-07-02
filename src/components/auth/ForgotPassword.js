@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Modal, ModalBody } from "reactstrap";
-import { TextInput, GRID } from "./FormControl";
+import { TextInput, GRID } from "../../Globals/FormControl";
 import styled from "styled-components";
 
 const ForgetPassword = (props) => {
@@ -18,7 +18,7 @@ const ForgetPassword = (props) => {
           <ModalBody>
             <div className="close">
               <img
-                src={require("../assets/img/close.png")}
+                src={require("../../assets/img/close.png")}
                 alt=""
                 onClick={closeModal}
               />

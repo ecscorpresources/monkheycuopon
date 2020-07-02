@@ -3,9 +3,9 @@ import { Link, withRouter } from "react-router-dom";
 import "./Toolbar.scss";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import { MdArrowDropDown } from "react-icons/md";
-import Signup from "../../../auth/Signup";
-import SignIn from "../../../auth/Signin";
-import PromoteCuopon from "../../../PromoteCuopon";
+import Signup from "../../../components/auth/Signup";
+import SignIn from "../../../components/auth/Signin";
+import PromoteCuopon from "../../../components/PromoteCuopon";
 
 const Toolbar = (props) => {
   const location = props.location.pathname;
@@ -21,7 +21,7 @@ const Toolbar = (props) => {
         <div className="toolbar_logo">
           <Link to="/">
             <img
-              src={require("../../../../assets/img/a1000coupons_logo.png")}
+              src={require("../../../assets/img/a1000coupons_logo.png")}
               alt="logo"
             />
           </Link>
@@ -87,7 +87,7 @@ const Toolbar = (props) => {
                 <li className="dashbaord-dropdown">
                   <div>
                     <img
-                      src={require("../../../../assets/img/76.png")}
+                      src={require("../../../assets/img/76.png")}
                       alt="user"
                     />
                     <h5>Johnstine</h5>

@@ -1,4 +1,4 @@
-@import "../../../../css/main.scss";
+@import "../../../css/main.scss";
 
 .toolbar_navigation {
   height: 100%;
@@ -161,7 +161,7 @@
         width: 100%;
         padding: 1rem 0 1rem 2rem;
         border-radius: 5rem;
-        background-image: url("../../../../assets/img/search.png");
+        background-image: url("../../../assets/img/search.png");
         background-repeat: no-repeat;
         background-position: calc(100% - 10px) center;
         &::placeholder {
